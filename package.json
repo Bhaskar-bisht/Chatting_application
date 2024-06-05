@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": " SET NODE_ENV=PRODUCTION && node app.js",
-    "dev": " SET NODE_ENV=DEVELOPMENT && nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Bhaskar_Bisht",
