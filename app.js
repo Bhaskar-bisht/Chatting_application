@@ -32,7 +32,7 @@ dotenv.config({
 
 const mongoURI = process.env.MONGO_URI;
 const port = process.env.PORT || 3000;
-const envMode = process.env.NODE_ENV.trim() || "PRODUCTION";
+// const envMode = process.env.NODE_ENV.trim() || "PRODUCTION";
 const adminSecretKey = process.env.ADMIN_SECRET_KEY || "bhaskar123";
 
 // ye line current connect user ke kiye hai ki current time main kitne user soket.io pe connect hai 
@@ -259,7 +259,7 @@ io.on("connection", (socket) => {
 app.use(errorMiddleware);
 
 server.listen(port, () => {
-  console.log(`Server is running on port ${port} in ${envMode} Mode`);
+  console.log(`Server is running on port ${port} `);
 });
 
-export { adminSecretKey, envMode, userSocketIDs };
+export { adminSecretKey, userSocketIDs };
