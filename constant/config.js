@@ -1,6 +1,6 @@
 const corsOptions = {
     origin: [
-      "https://talkhub-y5nb.onrender.com",
+      "https://chatweb-application-cogy.onrender.com",
       "http://localhost:4173",
       process.env.CLIENT_URL,
     ],
