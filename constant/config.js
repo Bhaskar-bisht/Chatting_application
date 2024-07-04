@@ -1,7 +1,5 @@
 const corsOptions = {
-    origin: [
-      "https://chatweb-application-cogy.onrender.com",
-    ],
+    origin: "https://chatweb-application-cogy.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   };
